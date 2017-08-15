@@ -3,62 +3,66 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Basic Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<title>Kathy Satterlee</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
-
-	
-	<header>
-		<div class="pageid">
-			<h1>Kathy Satterlee</h1>
+	<header id ="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">Kathy Satterlee</a>
+				<nav>
+					<a href="index.html">About</a>
+					<a href="portfolio.html">Portfolio</a> 
+					<a href="contact.html">Contact</a> 
+				</nav>
 		</div>
-		
-		<nav>
-			<ul>
-				<li> <a href="index.html">About</a></li> 
-				<li> <a href="Portfolio.html">Portfolio</a></li> 
-				<li> <a href="Contact.html">contact</a></li> 
-			</ul>
-		</nav>
 	</header>
+	
+	<div class="container" id="main-container">
+		<section class="main-section">
+			<h1>Contact</h1>
 
-	<div class="content">
-		<h2>Contact Me</h2>
-		<hr/>
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" placeholder="John Smith" required="required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="text" name="name" id="email" placeholder="example@gmail.com" required="required">
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" id="message" required="required"></textarea>
+					</li>
+				</ul>
+				<input type="submit" name="submit">
+			</form>
 
-		<form action="mailto:kberis@gmail.com" method="post" enctype="text/plain">
-		Name:<br>
-		<input type="text" name="name"><br>
-		E-mail:<br>
-		<input type="text" name="mail"><br>
-		Message:<br>
-		<input type="text" name="comment" size="50"><br><br>
-		<input type="submit" value="Send">
-		
-		</form>
-			
-	</div>
+				
+		</section>
 
-	<div class="connect">
-		<h3> Connect With Me </h3>
-		<hr>
-		<ul>
-			<li> <a href="https://github.com/ksatter/" target=_blank><img src="assets/images/git.png" height="50px" alt="Github"></a></li>
-			<li> <a href="https://www.linkedin.com/in/katheryn-satterlee/" target=_blank><img src="assets/images/li.png" height= 50px alt="LinkedIn"></a></li>
-			<li> <a href="https://stackoverflow.com/users/8413566/katheryn-satterlee?tab=profile" target=_blank><img src="assets/images/overflow.png" height= 50px alt="Stack Overflow"></a></li>
-		</ul>
+		<section class="sidebar">
+			<div id="connect">
+				<h2> Connect With Me </h2>
+				
+				<a href="https://github.com/ksatter/" target=_blank><img src="assets/images/git.png" height="50px" alt="Github"></a>
+				<a href="https://www.linkedin.com/in/katheryn-satterlee/" target=_blank><img src="assets/images/li.png" height= 50px alt="LinkedIn"></a>
+				<a href="https://stackoverflow.com/users/8413566/katheryn-satterlee?tab=profile" target=_blank><img src="assets/images/overflow.png" height= 50px alt="Stack Overflow"></a>
+			</div>
+		</section>
+
 	</div>
 
 	<footer>
-		<h6> &copy; Copyright 2017 Kathy Satterlee</h6>
+		<div class="container">
+			<h6> &copy; Copyright 2017 Kathy Satterlee</h6>
+		</div>
 	</footer>
 
-
-	
 </body>
-
-
 </html>
