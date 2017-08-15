@@ -1,0 +1,102 @@
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+
+	background-image: url(../../assets/images/vertical-waves.png);
+	color:#777777;
+	width: 1200spx;
+	overflow: none;
+
+}
+
+
+header{
+	background-color: white;
+
+	margin: 0px;
+	position: relative;
+	height:80px;
+	
+}
+
+nav{
+	background-color: white;
+	padding:10px;
+	margin: 10px;
+	position:relative;
+	float: right;
+
+}
+ul{
+	 list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+
+   
+}
+
+li{
+	float: left;
+	padding:10px;
+}
+.pageid{
+	background-color: #4aaaa5;
+	color: white;
+	padding: 10px;
+	float: left;
+	position: absolute;
+	top:0;
+	bottom:0;
+}
+
+.container {
+	position: relative;
+	overflow: none;
+	float: left;
+	max-width: 960px;
+}
+
+.section{
+	width: 650px;
+	background-color: lightgray;
+	padding:10px;
+	margin: 10px;
+	float: left;
+
+}
+
+.article {
+
+	background-color: #777;
+	padding:10px;
+	margin: 10px;
+}
+.title, .content {
+	background-color: white;
+	padding:10px;
+	margin: 10px;
+}
+
+.connect {
+	background-color: white;
+	margin: 10px;
+	width: 270px;
+	float: right;
+
+}
+.footer{
+	position:absolute;
+	bottom: 0px;
+	right:0;
+	left: 0;	
+	background-color: white;
+	padding:10px;
+	margin: 10px;
+	clear: both;
+
+}
+	
+
+
