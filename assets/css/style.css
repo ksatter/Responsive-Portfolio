@@ -3,7 +3,7 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/vertical-waves.png");
 }
 
 * {
@@ -13,7 +13,7 @@ body {
 /* general */
 
 .container {
-  width: 100%;
+  width: 95%;
   max-width: 960px;
   margin: 0 auto;
   clear: both;
@@ -65,7 +65,7 @@ h3 {
 
 #logo {
   float: left;
-  width: 315px;
+  width: 300px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -89,7 +89,7 @@ nav a {
   line-height: 18px;
   color: #999;
   text-decoration: none;
-  border-left: 3px solid #efefef;
+  border-left: 1px solid #efefef;
 }
 
 nav a:first-child {
@@ -113,12 +113,12 @@ footer {
 
 .sidebar {
   float: right;
-  width: 100%;
-  max-width: 270px;
+  width: 35%;
   padding: 30px;
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #ddd;
+  text-align: center;
 }
 
 h3,
@@ -127,13 +127,15 @@ h3,
   margin-bottom: 15px;
   line-height: 22px;
   border-bottom: 2px solid #eee;
+  text-align: ;
 }
 
 .social {
-  width: 62px;
-  height: 62px;
-  margin-top: 8px;
-  margin-right: 5px;
+  width: 25%;
+  max-width: 75px;
+  height: auto;
+  margin: 8px 5px 0px;
+  opacity: 0.8;
 }
 
 .social:last-child {
@@ -143,13 +145,13 @@ h3,
 /* main */
 
 #main-container {
+  width:95%;
   padding-top: 130px;
 }
 
 .main-section {
   float: left;
-  width: 100%;
-  max-width: 650px;
+  width: 60%;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
@@ -161,7 +163,7 @@ h3,
 .work {
   position: relative;
   float: left;
-  width: 274px;
+  width: 45%;
   margin: 20px 0 25px;
   overflow: auto;
 }
@@ -170,10 +172,15 @@ h3,
   margin-right: 40px;
 }
 
+.work:hover a {
+  opacity: 0.8;
+  
+}
+
 .work img {
   width: 100%;
   border: 0 none;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .work h3 {
@@ -236,4 +243,170 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media only screen and (max-width: 640px) {
+
+  /* For testing 
+
+  body {
+    background-color:red;
+  }
+
+  */
+  
+  /*header stacked and fixed*/
+
+  #masthead {
+    
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    clear:both;
+    text-align: center;
+    padding: 0;
+  }
+  
+  #logo {
+    width: 100%;
+  } 
+
+  #masthead .container {
+    width: 100%;
+  }
+
+  nav {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+
+  nav a{
+    display: inline-flex;
+    margin: 0px 25px;
+    border: none;
+  }
+
+  /*Main Content Full width*/
+  
+  .main-section {
+    float: none;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: auto;
+  }
+  
+  .sidebar {
+    float: left;
+    width: 95%;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .auth-image{
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+
+  /*Portfolio Single column*/
+
+  .work {
+    float: left;
+    width: 100% ;
+  }
+
+  .work img{
+    width:100%;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 768px){
+
+  /* For testing 
+  body {
+    background-color:blue;
+  }
+  */
+
+  /*header stacked*/
+
+  #masthead {
+    
+    width: 100%;
+    clear:both;
+    text-align: center;
+    padding: 0;
+  }
+
+   #logo {
+    width: 100%;
+  } 
+
+   #masthead .container {
+    width: 100%;
+  }
+
+  nav {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+
+  nav a{
+    display: inline-flex;
+   margin: 0px 25px;
+    border: none;
+  }
+
+  /*Main Content full width*/
+  
+  .main-section {
+    float: none;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: auto;
+  }
+  
+  .sidebar {
+    float: left;
+    width: 95%;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: left;
+  }
+  
+
+  .auth-image{
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width: 980px){
+  
+/* for testing
+  body {
+    background-color:green;
+  }
+  */
+
+   /*Portfolio Single column*/
+
+  .work {
+    float: left;
+    width: 100% ;
+  }
+
+  .work img{
+    width:100%;
+  }
+
+
 }
