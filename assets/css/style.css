@@ -247,8 +247,7 @@ input[type=submit] {
 
 @media only screen and (max-width: 640px) {
 
-  /* For testing 
-
+  /* for testing
   body {
     background-color:red;
   }
@@ -258,10 +257,8 @@ input[type=submit] {
   /*header stacked and fixed*/
 
   #masthead {
-    
     position: absolute;
     margin: 0 auto;
-    width: 100%;
     clear:both;
     text-align: center;
     padding: 0;
@@ -276,10 +273,10 @@ input[type=submit] {
   }
 
   nav {
-    display: inline-block;
-    width: 100%;
+      width: 100%;
     margin: 0;
     padding: 5px;
+    text-align: center;
   }
 
   nav a{
@@ -322,7 +319,7 @@ input[type=submit] {
 
 @media only screen and (min-width: 641px) and (max-width: 768px){
 
-  /* For testing 
+ /* for testing 
   body {
     background-color:blue;
   }
@@ -331,10 +328,8 @@ input[type=submit] {
   /*header stacked*/
 
   #masthead {
-    
     width: 100%;
     clear:both;
-    text-align: center;
     padding: 0;
   }
 
@@ -347,15 +342,15 @@ input[type=submit] {
   }
 
   nav {
-    display: inline-block;
     width: 100%;
     margin: 0;
     padding: 5px;
+    text-align: center;
   }
 
   nav a{
     display: inline-flex;
-   margin: 0px 25px;
+    margin: 0px 25px;
     border: none;
   }
 
@@ -387,7 +382,7 @@ input[type=submit] {
 
 @media only screen and (min-width:768px) and (max-width: 980px){
   
-/* for testing
+  /*for testing
   body {
     background-color:green;
   }
